@@ -10,7 +10,7 @@ Copyright (C) 2015 Free Software Foundation, Inc.
 
 ----
 #### Algorithms:
-<br> Details are covered in Report.pdf
+Details are covered in Report.pdf
 - FCFS (First Come First Served)
 - SJF (Shortest Job First)
 - Priority
