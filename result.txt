@@ -1,0 +1,1646 @@
+총 프로세스 수: 10
+pid    priority    arrival_time    CPU burst    IO burst
+========================================================
+  1           7               7            5           0
+  2           3               7           17           2
+  3           5              18            8           0
+  4           3              12           14           2
+  5           2              17           18           0
+  6           2               4            7           0
+  7           4               3           16           0
+  8           3               6           16           0
+  9           4              17           13           5
+ 10           4              19           12           0
+========================================================
+
+<FCFS Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+4: (pid: 7) -> running 
+5: (pid: 7) -> running 
+6: (pid: 7) -> running 
+7: (pid: 7) -> running 
+8: (pid: 7) -> running 
+9: (pid: 7) -> running 
+10: (pid: 7) -> running 
+11: (pid: 7) -> running 
+12: (pid: 7) -> running 
+13: (pid: 7) -> running 
+14: (pid: 7) -> running 
+15: (pid: 7) -> running 
+16: (pid: 7) -> running 
+17: (pid: 7) -> running 
+18: (pid: 7) -> running -> terminated
+19: (pid: 6) -> running 
+20: (pid: 6) -> running 
+21: (pid: 6) -> running 
+22: (pid: 6) -> running 
+23: (pid: 6) -> running 
+24: (pid: 6) -> running 
+25: (pid: 6) -> running -> terminated
+26: (pid: 8) -> running 
+27: (pid: 8) -> running 
+28: (pid: 8) -> running 
+29: (pid: 8) -> running 
+30: (pid: 8) -> running 
+31: (pid: 8) -> running 
+32: (pid: 8) -> running 
+33: (pid: 8) -> running 
+34: (pid: 8) -> running 
+35: (pid: 8) -> running 
+36: (pid: 8) -> running 
+37: (pid: 8) -> running 
+38: (pid: 8) -> running 
+39: (pid: 8) -> running 
+40: (pid: 8) -> running 
+41: (pid: 8) -> running -> terminated
+42: (pid: 1) -> running 
+43: (pid: 1) -> running 
+44: (pid: 1) -> running 
+45: (pid: 1) -> running 
+46: (pid: 1) -> running -> terminated
+47: (pid: 2) -> running -> IO request
+48: (pid: 4) -> running -> IO request
+49: (pid: 2) -> IO complete, (pid: 5) -> running 
+50: (pid: 4) -> IO complete, (pid: 5) -> running 
+51: (pid: 5) -> running 
+52: (pid: 5) -> running 
+53: (pid: 5) -> running 
+54: (pid: 5) -> running 
+55: (pid: 5) -> running 
+56: (pid: 5) -> running 
+57: (pid: 5) -> running 
+58: (pid: 5) -> running 
+59: (pid: 5) -> running 
+60: (pid: 5) -> running 
+61: (pid: 5) -> running 
+62: (pid: 5) -> running 
+63: (pid: 5) -> running 
+64: (pid: 5) -> running 
+65: (pid: 5) -> running 
+66: (pid: 5) -> running -> terminated
+67: (pid: 9) -> running -> IO request
+68: (pid: 3) -> running 
+69: (pid: 3) -> running 
+70: (pid: 3) -> running 
+71: (pid: 3) -> running 
+72: (pid: 9) -> IO complete, (pid: 3) -> running 
+73: (pid: 3) -> running 
+74: (pid: 3) -> running 
+75: (pid: 3) -> running -> terminated
+76: (pid: 10) -> running 
+77: (pid: 10) -> running 
+78: (pid: 10) -> running 
+79: (pid: 10) -> running 
+80: (pid: 10) -> running 
+81: (pid: 10) -> running 
+82: (pid: 10) -> running 
+83: (pid: 10) -> running 
+84: (pid: 10) -> running 
+85: (pid: 10) -> running 
+86: (pid: 10) -> running 
+87: (pid: 10) -> running -> terminated
+88: (pid: 2) -> running 
+89: (pid: 2) -> running 
+90: (pid: 2) -> running 
+91: (pid: 2) -> running 
+92: (pid: 2) -> running 
+93: (pid: 2) -> running 
+94: (pid: 2) -> running 
+95: (pid: 2) -> running 
+96: (pid: 2) -> running 
+97: (pid: 2) -> running 
+98: (pid: 2) -> running 
+99: (pid: 2) -> running 
+100: (pid: 2) -> running 
+101: (pid: 2) -> running 
+102: (pid: 2) -> running 
+103: (pid: 2) -> running -> terminated
+104: (pid: 4) -> running 
+105: (pid: 4) -> running 
+106: (pid: 4) -> running 
+107: (pid: 4) -> running 
+108: (pid: 4) -> running 
+109: (pid: 4) -> running 
+110: (pid: 4) -> running 
+111: (pid: 4) -> running 
+112: (pid: 4) -> running 
+113: (pid: 4) -> running 
+114: (pid: 4) -> running 
+115: (pid: 4) -> running 
+116: (pid: 4) -> running -> terminated
+117: (pid: 9) -> running 
+118: (pid: 9) -> running 
+119: (pid: 9) -> running 
+===========================================================
+(pid: 7)
+waiting time = 0, turnaround time = 16, response time = 0
+===========================================================
+(pid: 6)
+waiting time = 15, turnaround time = 22, response time = 15
+===========================================================
+(pid: 8)
+waiting time = 20, turnaround time = 36, response time = 20
+===========================================================
+(pid: 1)
+waiting time = 35, turnaround time = 40, response time = 35
+===========================================================
+(pid: 5)
+waiting time = 32, turnaround time = 50, response time = 32
+===========================================================
+(pid: 3)
+waiting time = 50, turnaround time = 58, response time = 50
+===========================================================
+(pid: 10)
+waiting time = 57, turnaround time = 69, response time = 57
+===========================================================
+(pid: 2)
+waiting time = 78, turnaround time = 97, response time = 40
+===========================================================
+(pid: 4)
+waiting time = 89, turnaround time = 105, response time = 36
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 41
+Average turnaround time: 54
+Average response time: 31
+Completed: 9
+===========================================================
+<Non-preemptive SJF Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+4: (pid: 7) -> running 
+5: (pid: 7) -> running 
+6: (pid: 7) -> running 
+7: (pid: 7) -> running 
+8: (pid: 7) -> running 
+9: (pid: 7) -> running 
+10: (pid: 7) -> running 
+11: (pid: 7) -> running 
+12: (pid: 7) -> running 
+13: (pid: 7) -> running 
+14: (pid: 7) -> running 
+15: (pid: 7) -> running 
+16: (pid: 7) -> running 
+17: (pid: 7) -> running 
+18: (pid: 7) -> running -> terminated
+19: (pid: 1) -> running 
+20: (pid: 1) -> running 
+21: (pid: 1) -> running 
+22: (pid: 1) -> running 
+23: (pid: 1) -> running -> terminated
+24: (pid: 6) -> running 
+25: (pid: 6) -> running 
+26: (pid: 6) -> running 
+27: (pid: 6) -> running 
+28: (pid: 6) -> running 
+29: (pid: 6) -> running 
+30: (pid: 6) -> running -> terminated
+31: (pid: 3) -> running 
+32: (pid: 3) -> running 
+33: (pid: 3) -> running 
+34: (pid: 3) -> running 
+35: (pid: 3) -> running 
+36: (pid: 3) -> running 
+37: (pid: 3) -> running 
+38: (pid: 3) -> running -> terminated
+39: (pid: 10) -> running 
+40: (pid: 10) -> running 
+41: (pid: 10) -> running 
+42: (pid: 10) -> running 
+43: (pid: 10) -> running 
+44: (pid: 10) -> running 
+45: (pid: 10) -> running 
+46: (pid: 10) -> running 
+47: (pid: 10) -> running 
+48: (pid: 10) -> running 
+49: (pid: 10) -> running 
+50: (pid: 10) -> running -> terminated
+51: (pid: 9) -> running -> IO request
+52: (pid: 4) -> running -> IO request
+53: (pid: 8) -> running 
+54: (pid: 4) -> IO complete, (pid: 8) -> running 
+55: (pid: 8) -> running 
+56: (pid: 9) -> IO complete, (pid: 8) -> running 
+57: (pid: 8) -> running 
+58: (pid: 8) -> running 
+59: (pid: 8) -> running 
+60: (pid: 8) -> running 
+61: (pid: 8) -> running 
+62: (pid: 8) -> running 
+63: (pid: 8) -> running 
+64: (pid: 8) -> running 
+65: (pid: 8) -> running 
+66: (pid: 8) -> running 
+67: (pid: 8) -> running 
+68: (pid: 8) -> running -> terminated
+69: (pid: 9) -> running 
+70: (pid: 9) -> running 
+71: (pid: 9) -> running 
+72: (pid: 9) -> running 
+73: (pid: 9) -> running 
+74: (pid: 9) -> running 
+75: (pid: 9) -> running 
+76: (pid: 9) -> running 
+77: (pid: 9) -> running 
+78: (pid: 9) -> running 
+79: (pid: 9) -> running 
+80: (pid: 9) -> running -> terminated
+81: (pid: 4) -> running 
+82: (pid: 4) -> running 
+83: (pid: 4) -> running 
+84: (pid: 4) -> running 
+85: (pid: 4) -> running 
+86: (pid: 4) -> running 
+87: (pid: 4) -> running 
+88: (pid: 4) -> running 
+89: (pid: 4) -> running 
+90: (pid: 4) -> running 
+91: (pid: 4) -> running 
+92: (pid: 4) -> running 
+93: (pid: 4) -> running -> terminated
+94: (pid: 2) -> running -> IO request
+95: (pid: 5) -> running 
+96: (pid: 2) -> IO complete, (pid: 5) -> running 
+97: (pid: 5) -> running 
+98: (pid: 5) -> running 
+99: (pid: 5) -> running 
+100: (pid: 5) -> running 
+101: (pid: 5) -> running 
+102: (pid: 5) -> running 
+103: (pid: 5) -> running 
+104: (pid: 5) -> running 
+105: (pid: 5) -> running 
+106: (pid: 5) -> running 
+107: (pid: 5) -> running 
+108: (pid: 5) -> running 
+109: (pid: 5) -> running 
+110: (pid: 5) -> running 
+111: (pid: 5) -> running 
+112: (pid: 5) -> running -> terminated
+113: (pid: 2) -> running 
+114: (pid: 2) -> running 
+115: (pid: 2) -> running 
+116: (pid: 2) -> running 
+117: (pid: 2) -> running 
+118: (pid: 2) -> running 
+119: (pid: 2) -> running 
+===========================================================
+(pid: 7)
+waiting time = 0, turnaround time = 16, response time = 0
+===========================================================
+(pid: 1)
+waiting time = 12, turnaround time = 17, response time = 12
+===========================================================
+(pid: 6)
+waiting time = 20, turnaround time = 27, response time = 20
+===========================================================
+(pid: 3)
+waiting time = 13, turnaround time = 21, response time = 13
+===========================================================
+(pid: 10)
+waiting time = 20, turnaround time = 32, response time = 20
+===========================================================
+(pid: 8)
+waiting time = 47, turnaround time = 63, response time = 47
+===========================================================
+(pid: 9)
+waiting time = 46, turnaround time = 64, response time = 34
+===========================================================
+(pid: 4)
+waiting time = 66, turnaround time = 82, response time = 40
+===========================================================
+(pid: 5)
+waiting time = 78, turnaround time = 96, response time = 78
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 33
+Average turnaround time: 46
+Average response time: 29
+Completed: 9
+===========================================================
+<Preemptive SJF Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+preemption is detected.
+4: (pid: 6) -> running 
+5: (pid: 6) -> running 
+6: (pid: 6) -> running 
+7: (pid: 6) -> running 
+8: (pid: 6) -> running 
+9: (pid: 6) -> running 
+10: (pid: 6) -> running -> terminated
+11: (pid: 1) -> running 
+12: (pid: 1) -> running 
+13: (pid: 1) -> running 
+14: (pid: 1) -> running 
+15: (pid: 1) -> running -> terminated
+16: (pid: 4) -> running -> IO request
+17: (pid: 9) -> running -> IO request
+18: (pid: 4) -> IO complete, (pid: 3) -> running 
+19: (pid: 3) -> running 
+20: (pid: 3) -> running 
+21: (pid: 3) -> running 
+22: (pid: 9) -> IO complete, (pid: 3) -> running 
+23: (pid: 3) -> running 
+24: (pid: 3) -> running 
+25: (pid: 3) -> running -> terminated
+26: (pid: 9) -> running 
+27: (pid: 9) -> running 
+28: (pid: 9) -> running 
+29: (pid: 9) -> running 
+30: (pid: 9) -> running 
+31: (pid: 9) -> running 
+32: (pid: 9) -> running 
+33: (pid: 9) -> running 
+34: (pid: 9) -> running 
+35: (pid: 9) -> running 
+36: (pid: 9) -> running 
+37: (pid: 9) -> running -> terminated
+38: (pid: 10) -> running 
+39: (pid: 10) -> running 
+40: (pid: 10) -> running 
+41: (pid: 10) -> running 
+42: (pid: 10) -> running 
+43: (pid: 10) -> running 
+44: (pid: 10) -> running 
+45: (pid: 10) -> running 
+46: (pid: 10) -> running 
+47: (pid: 10) -> running 
+48: (pid: 10) -> running 
+49: (pid: 10) -> running -> terminated
+50: (pid: 4) -> running 
+51: (pid: 4) -> running 
+52: (pid: 4) -> running 
+53: (pid: 4) -> running 
+54: (pid: 4) -> running 
+55: (pid: 4) -> running 
+56: (pid: 4) -> running 
+57: (pid: 4) -> running 
+58: (pid: 4) -> running 
+59: (pid: 4) -> running 
+60: (pid: 4) -> running 
+61: (pid: 4) -> running 
+62: (pid: 4) -> running -> terminated
+63: (pid: 7) -> running 
+64: (pid: 7) -> running 
+65: (pid: 7) -> running 
+66: (pid: 7) -> running 
+67: (pid: 7) -> running 
+68: (pid: 7) -> running 
+69: (pid: 7) -> running 
+70: (pid: 7) -> running 
+71: (pid: 7) -> running 
+72: (pid: 7) -> running 
+73: (pid: 7) -> running 
+74: (pid: 7) -> running 
+75: (pid: 7) -> running 
+76: (pid: 7) -> running 
+77: (pid: 7) -> running -> terminated
+78: (pid: 8) -> running 
+79: (pid: 8) -> running 
+80: (pid: 8) -> running 
+81: (pid: 8) -> running 
+82: (pid: 8) -> running 
+83: (pid: 8) -> running 
+84: (pid: 8) -> running 
+85: (pid: 8) -> running 
+86: (pid: 8) -> running 
+87: (pid: 8) -> running 
+88: (pid: 8) -> running 
+89: (pid: 8) -> running 
+90: (pid: 8) -> running 
+91: (pid: 8) -> running 
+92: (pid: 8) -> running 
+93: (pid: 8) -> running -> terminated
+94: (pid: 2) -> running -> IO request
+95: (pid: 5) -> running 
+96: (pid: 2) -> IO complete, (pid: 5) -> running 
+preemption is detected.
+97: (pid: 2) -> running 
+98: (pid: 2) -> running 
+99: (pid: 2) -> running 
+100: (pid: 2) -> running 
+101: (pid: 2) -> running 
+102: (pid: 2) -> running 
+103: (pid: 2) -> running 
+104: (pid: 2) -> running 
+105: (pid: 2) -> running 
+106: (pid: 2) -> running 
+107: (pid: 2) -> running 
+108: (pid: 2) -> running 
+109: (pid: 2) -> running 
+110: (pid: 2) -> running 
+111: (pid: 2) -> running 
+112: (pid: 2) -> running -> terminated
+113: (pid: 5) -> running 
+114: (pid: 5) -> running 
+115: (pid: 5) -> running 
+116: (pid: 5) -> running 
+117: (pid: 5) -> running 
+118: (pid: 5) -> running 
+119: (pid: 5) -> running 
+===========================================================
+(pid: 6)
+waiting time = 0, turnaround time = 7, response time = 0
+===========================================================
+(pid: 1)
+waiting time = 4, turnaround time = 9, response time = 4
+===========================================================
+(pid: 3)
+waiting time = 0, turnaround time = 8, response time = 0
+===========================================================
+(pid: 9)
+waiting time = 3, turnaround time = 21, response time = 0
+===========================================================
+(pid: 10)
+waiting time = 19, turnaround time = 31, response time = 19
+===========================================================
+(pid: 4)
+waiting time = 35, turnaround time = 51, response time = 4
+===========================================================
+(pid: 7)
+waiting time = 59, turnaround time = 75, response time = 0
+===========================================================
+(pid: 8)
+waiting time = 72, turnaround time = 88, response time = 72
+===========================================================
+(pid: 2)
+waiting time = 87, turnaround time = 106, response time = 87
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 31
+Average turnaround time: 44
+Average response time: 20
+Completed: 9
+===========================================================
+<Non-preemptive Priority Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+4: (pid: 7) -> running 
+5: (pid: 7) -> running 
+6: (pid: 7) -> running 
+7: (pid: 7) -> running 
+8: (pid: 7) -> running 
+9: (pid: 7) -> running 
+10: (pid: 7) -> running 
+11: (pid: 7) -> running 
+12: (pid: 7) -> running 
+13: (pid: 7) -> running 
+14: (pid: 7) -> running 
+15: (pid: 7) -> running 
+16: (pid: 7) -> running 
+17: (pid: 7) -> running 
+18: (pid: 7) -> running -> terminated
+19: (pid: 6) -> running 
+20: (pid: 6) -> running 
+21: (pid: 6) -> running 
+22: (pid: 6) -> running 
+23: (pid: 6) -> running 
+24: (pid: 6) -> running 
+25: (pid: 6) -> running -> terminated
+26: (pid: 5) -> running 
+27: (pid: 5) -> running 
+28: (pid: 5) -> running 
+29: (pid: 5) -> running 
+30: (pid: 5) -> running 
+31: (pid: 5) -> running 
+32: (pid: 5) -> running 
+33: (pid: 5) -> running 
+34: (pid: 5) -> running 
+35: (pid: 5) -> running 
+36: (pid: 5) -> running 
+37: (pid: 5) -> running 
+38: (pid: 5) -> running 
+39: (pid: 5) -> running 
+40: (pid: 5) -> running 
+41: (pid: 5) -> running 
+42: (pid: 5) -> running 
+43: (pid: 5) -> running -> terminated
+44: (pid: 8) -> running 
+45: (pid: 8) -> running 
+46: (pid: 8) -> running 
+47: (pid: 8) -> running 
+48: (pid: 8) -> running 
+49: (pid: 8) -> running 
+50: (pid: 8) -> running 
+51: (pid: 8) -> running 
+52: (pid: 8) -> running 
+53: (pid: 8) -> running 
+54: (pid: 8) -> running 
+55: (pid: 8) -> running 
+56: (pid: 8) -> running 
+57: (pid: 8) -> running 
+58: (pid: 8) -> running 
+59: (pid: 8) -> running -> terminated
+60: (pid: 2) -> running -> IO request
+61: (pid: 4) -> running -> IO request
+62: (pid: 2) -> IO complete, (pid: 9) -> running -> IO request
+63: (pid: 4) -> IO complete, (pid: 2) -> running 
+64: (pid: 2) -> running 
+65: (pid: 2) -> running 
+66: (pid: 2) -> running 
+67: (pid: 9) -> IO complete, (pid: 2) -> running 
+68: (pid: 2) -> running 
+69: (pid: 2) -> running 
+70: (pid: 2) -> running 
+71: (pid: 2) -> running 
+72: (pid: 2) -> running 
+73: (pid: 2) -> running 
+74: (pid: 2) -> running 
+75: (pid: 2) -> running 
+76: (pid: 2) -> running 
+77: (pid: 2) -> running 
+78: (pid: 2) -> running -> terminated
+79: (pid: 4) -> running 
+80: (pid: 4) -> running 
+81: (pid: 4) -> running 
+82: (pid: 4) -> running 
+83: (pid: 4) -> running 
+84: (pid: 4) -> running 
+85: (pid: 4) -> running 
+86: (pid: 4) -> running 
+87: (pid: 4) -> running 
+88: (pid: 4) -> running 
+89: (pid: 4) -> running 
+90: (pid: 4) -> running 
+91: (pid: 4) -> running -> terminated
+92: (pid: 9) -> running 
+93: (pid: 9) -> running 
+94: (pid: 9) -> running 
+95: (pid: 9) -> running 
+96: (pid: 9) -> running 
+97: (pid: 9) -> running 
+98: (pid: 9) -> running 
+99: (pid: 9) -> running 
+100: (pid: 9) -> running 
+101: (pid: 9) -> running 
+102: (pid: 9) -> running 
+103: (pid: 9) -> running -> terminated
+104: (pid: 10) -> running 
+105: (pid: 10) -> running 
+106: (pid: 10) -> running 
+107: (pid: 10) -> running 
+108: (pid: 10) -> running 
+109: (pid: 10) -> running 
+110: (pid: 10) -> running 
+111: (pid: 10) -> running 
+112: (pid: 10) -> running 
+113: (pid: 10) -> running 
+114: (pid: 10) -> running 
+115: (pid: 10) -> running -> terminated
+116: (pid: 3) -> running 
+117: (pid: 3) -> running 
+118: (pid: 3) -> running 
+119: (pid: 3) -> running 
+===========================================================
+(pid: 7)
+waiting time = 0, turnaround time = 16, response time = 0
+===========================================================
+(pid: 6)
+waiting time = 15, turnaround time = 22, response time = 15
+===========================================================
+(pid: 5)
+waiting time = 9, turnaround time = 27, response time = 9
+===========================================================
+(pid: 8)
+waiting time = 38, turnaround time = 54, response time = 38
+===========================================================
+(pid: 2)
+waiting time = 53, turnaround time = 72, response time = 53
+===========================================================
+(pid: 4)
+waiting time = 64, turnaround time = 80, response time = 49
+===========================================================
+(pid: 9)
+waiting time = 69, turnaround time = 87, response time = 45
+===========================================================
+(pid: 10)
+waiting time = 85, turnaround time = 97, response time = 85
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 41
+Average turnaround time: 56
+Average response time: 36
+Completed: 8
+===========================================================
+<Preemptive Priority Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+preemption is detected.
+4: (pid: 6) -> running 
+5: (pid: 6) -> running 
+6: (pid: 6) -> running 
+7: (pid: 6) -> running 
+8: (pid: 6) -> running 
+9: (pid: 6) -> running 
+10: (pid: 6) -> running -> terminated
+11: (pid: 8) -> running 
+12: (pid: 8) -> running 
+13: (pid: 8) -> running 
+14: (pid: 8) -> running 
+15: (pid: 8) -> running 
+16: (pid: 8) -> running 
+preemption is detected.
+17: (pid: 5) -> running 
+18: (pid: 5) -> running 
+19: (pid: 5) -> running 
+20: (pid: 5) -> running 
+21: (pid: 5) -> running 
+22: (pid: 5) -> running 
+23: (pid: 5) -> running 
+24: (pid: 5) -> running 
+25: (pid: 5) -> running 
+26: (pid: 5) -> running 
+27: (pid: 5) -> running 
+28: (pid: 5) -> running 
+29: (pid: 5) -> running 
+30: (pid: 5) -> running 
+31: (pid: 5) -> running 
+32: (pid: 5) -> running 
+33: (pid: 5) -> running 
+34: (pid: 5) -> running -> terminated
+35: (pid: 8) -> running 
+36: (pid: 8) -> running 
+37: (pid: 8) -> running 
+38: (pid: 8) -> running 
+39: (pid: 8) -> running 
+40: (pid: 8) -> running 
+41: (pid: 8) -> running 
+42: (pid: 8) -> running 
+43: (pid: 8) -> running 
+44: (pid: 8) -> running -> terminated
+45: (pid: 2) -> running -> IO request
+46: (pid: 4) -> running -> IO request
+47: (pid: 2) -> IO complete, (pid: 7) -> running 
+preemption is detected.
+48: (pid: 4) -> IO complete, (pid: 2) -> running 
+49: (pid: 2) -> running 
+50: (pid: 2) -> running 
+51: (pid: 2) -> running 
+52: (pid: 2) -> running 
+53: (pid: 2) -> running 
+54: (pid: 2) -> running 
+55: (pid: 2) -> running 
+56: (pid: 2) -> running 
+57: (pid: 2) -> running 
+58: (pid: 2) -> running 
+59: (pid: 2) -> running 
+60: (pid: 2) -> running 
+61: (pid: 2) -> running 
+62: (pid: 2) -> running 
+63: (pid: 2) -> running -> terminated
+64: (pid: 4) -> running 
+65: (pid: 4) -> running 
+66: (pid: 4) -> running 
+67: (pid: 4) -> running 
+68: (pid: 4) -> running 
+69: (pid: 4) -> running 
+70: (pid: 4) -> running 
+71: (pid: 4) -> running 
+72: (pid: 4) -> running 
+73: (pid: 4) -> running 
+74: (pid: 4) -> running 
+75: (pid: 4) -> running 
+76: (pid: 4) -> running -> terminated
+77: (pid: 7) -> running 
+78: (pid: 7) -> running 
+79: (pid: 7) -> running 
+80: (pid: 7) -> running 
+81: (pid: 7) -> running 
+82: (pid: 7) -> running 
+83: (pid: 7) -> running 
+84: (pid: 7) -> running 
+85: (pid: 7) -> running 
+86: (pid: 7) -> running 
+87: (pid: 7) -> running 
+88: (pid: 7) -> running 
+89: (pid: 7) -> running 
+90: (pid: 7) -> running -> terminated
+91: (pid: 9) -> running -> IO request
+92: (pid: 10) -> running 
+93: (pid: 10) -> running 
+94: (pid: 10) -> running 
+95: (pid: 10) -> running 
+96: (pid: 9) -> IO complete, (pid: 10) -> running 
+preemption is detected.
+97: (pid: 9) -> running 
+98: (pid: 9) -> running 
+99: (pid: 9) -> running 
+100: (pid: 9) -> running 
+101: (pid: 9) -> running 
+102: (pid: 9) -> running 
+103: (pid: 9) -> running 
+104: (pid: 9) -> running 
+105: (pid: 9) -> running 
+106: (pid: 9) -> running 
+107: (pid: 9) -> running 
+108: (pid: 9) -> running -> terminated
+109: (pid: 10) -> running 
+110: (pid: 10) -> running 
+111: (pid: 10) -> running 
+112: (pid: 10) -> running 
+113: (pid: 10) -> running 
+114: (pid: 10) -> running 
+115: (pid: 10) -> running -> terminated
+116: (pid: 3) -> running 
+117: (pid: 3) -> running 
+118: (pid: 3) -> running 
+119: (pid: 3) -> running 
+===========================================================
+(pid: 6)
+waiting time = 0, turnaround time = 7, response time = 0
+===========================================================
+(pid: 5)
+waiting time = 0, turnaround time = 18, response time = 0
+===========================================================
+(pid: 8)
+waiting time = 23, turnaround time = 39, response time = 5
+===========================================================
+(pid: 2)
+waiting time = 38, turnaround time = 57, response time = 38
+===========================================================
+(pid: 4)
+waiting time = 49, turnaround time = 65, response time = 34
+===========================================================
+(pid: 7)
+waiting time = 72, turnaround time = 88, response time = 0
+===========================================================
+(pid: 9)
+waiting time = 74, turnaround time = 92, response time = 74
+===========================================================
+(pid: 10)
+waiting time = 85, turnaround time = 97, response time = 73
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 42
+Average turnaround time: 57
+Average response time: 28
+Completed: 8
+===========================================================
+<Round Robin Algorithm (time quantum: 3)>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+4: (pid: 7) -> running 
+5: (pid: 7) -> running 
+6: (pid: 6) -> running 
+7: (pid: 6) -> running 
+8: (pid: 6) -> running 
+9: (pid: 8) -> running 
+10: (pid: 8) -> running 
+11: (pid: 8) -> running 
+12: (pid: 7) -> running 
+13: (pid: 7) -> running 
+14: (pid: 7) -> running 
+15: (pid: 1) -> running 
+16: (pid: 1) -> running 
+17: (pid: 1) -> running 
+18: (pid: 2) -> running -> IO request
+19: (pid: 6) -> running 
+20: (pid: 2) -> IO complete, (pid: 6) -> running 
+21: (pid: 6) -> running 
+22: (pid: 4) -> running -> IO request
+23: (pid: 8) -> running 
+24: (pid: 4) -> IO complete, (pid: 8) -> running 
+25: (pid: 8) -> running 
+26: (pid: 7) -> running 
+27: (pid: 7) -> running 
+28: (pid: 7) -> running 
+29: (pid: 5) -> running 
+30: (pid: 5) -> running 
+31: (pid: 5) -> running 
+32: (pid: 9) -> running -> IO request
+33: (pid: 3) -> running 
+34: (pid: 3) -> running 
+35: (pid: 3) -> running 
+36: (pid: 1) -> running 
+37: (pid: 9) -> IO complete, (pid: 1) -> running -> terminated
+38: (pid: 10) -> running 
+39: (pid: 10) -> running 
+40: (pid: 10) -> running 
+41: (pid: 2) -> running 
+42: (pid: 2) -> running 
+43: (pid: 2) -> running 
+44: (pid: 6) -> running -> terminated
+45: (pid: 4) -> running 
+46: (pid: 4) -> running 
+47: (pid: 4) -> running 
+48: (pid: 8) -> running 
+49: (pid: 8) -> running 
+50: (pid: 8) -> running 
+51: (pid: 7) -> running 
+52: (pid: 7) -> running 
+53: (pid: 7) -> running 
+54: (pid: 5) -> running 
+55: (pid: 5) -> running 
+56: (pid: 5) -> running 
+57: (pid: 3) -> running 
+58: (pid: 3) -> running 
+59: (pid: 3) -> running 
+60: (pid: 9) -> running 
+61: (pid: 9) -> running 
+62: (pid: 9) -> running 
+63: (pid: 10) -> running 
+64: (pid: 10) -> running 
+65: (pid: 10) -> running 
+66: (pid: 2) -> running 
+67: (pid: 2) -> running 
+68: (pid: 2) -> running 
+69: (pid: 4) -> running 
+70: (pid: 4) -> running 
+71: (pid: 4) -> running 
+72: (pid: 8) -> running 
+73: (pid: 8) -> running 
+74: (pid: 8) -> running 
+75: (pid: 7) -> running 
+76: (pid: 7) -> running 
+77: (pid: 7) -> running 
+78: (pid: 5) -> running 
+79: (pid: 5) -> running 
+80: (pid: 5) -> running 
+81: (pid: 3) -> running 
+82: (pid: 3) -> running -> terminated
+83: (pid: 9) -> running 
+84: (pid: 9) -> running 
+85: (pid: 9) -> running 
+86: (pid: 10) -> running 
+87: (pid: 10) -> running 
+88: (pid: 10) -> running 
+89: (pid: 2) -> running 
+90: (pid: 2) -> running 
+91: (pid: 2) -> running 
+92: (pid: 4) -> running 
+93: (pid: 4) -> running 
+94: (pid: 4) -> running 
+95: (pid: 8) -> running 
+96: (pid: 8) -> running 
+97: (pid: 8) -> running 
+98: (pid: 7) -> running -> terminated
+99: (pid: 5) -> running 
+100: (pid: 5) -> running 
+101: (pid: 5) -> running 
+102: (pid: 9) -> running 
+103: (pid: 9) -> running 
+104: (pid: 9) -> running 
+105: (pid: 10) -> running 
+106: (pid: 10) -> running 
+107: (pid: 10) -> running -> terminated
+108: (pid: 2) -> running 
+109: (pid: 2) -> running 
+110: (pid: 2) -> running 
+111: (pid: 4) -> running 
+112: (pid: 4) -> running 
+113: (pid: 4) -> running 
+114: (pid: 8) -> running -> terminated
+115: (pid: 5) -> running 
+116: (pid: 5) -> running 
+117: (pid: 5) -> running 
+118: (pid: 9) -> running 
+119: (pid: 9) -> running 
+===========================================================
+(pid: 1)
+waiting time = 26, turnaround time = 31, response time = 8
+===========================================================
+(pid: 6)
+waiting time = 34, turnaround time = 41, response time = 2
+===========================================================
+(pid: 3)
+waiting time = 57, turnaround time = 65, response time = 15
+===========================================================
+(pid: 7)
+waiting time = 80, turnaround time = 96, response time = 0
+===========================================================
+(pid: 10)
+waiting time = 77, turnaround time = 89, response time = 19
+===========================================================
+(pid: 8)
+waiting time = 93, turnaround time = 109, response time = 3
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 61
+Average turnaround time: 71
+Average response time: 7
+Completed: 6
+===========================================================
+<Non-preemptive LIF Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+4: (pid: 7) -> running 
+5: (pid: 7) -> running 
+6: (pid: 7) -> running 
+7: (pid: 7) -> running 
+8: (pid: 7) -> running 
+9: (pid: 7) -> running 
+10: (pid: 7) -> running 
+11: (pid: 7) -> running 
+12: (pid: 7) -> running 
+13: (pid: 7) -> running 
+14: (pid: 7) -> running 
+15: (pid: 7) -> running 
+16: (pid: 7) -> running 
+17: (pid: 7) -> running 
+18: (pid: 7) -> running -> terminated
+19: (pid: 9) -> running -> IO request
+20: (pid: 2) -> running -> IO request
+21: (pid: 4) -> running -> IO request
+22: (pid: 2) -> IO complete, (pid: 6) -> running 
+23: (pid: 4) -> IO complete, (pid: 6) -> running 
+24: (pid: 9) -> IO complete, (pid: 6) -> running 
+25: (pid: 6) -> running 
+26: (pid: 6) -> running 
+27: (pid: 6) -> running 
+28: (pid: 6) -> running -> terminated
+29: (pid: 8) -> running 
+30: (pid: 8) -> running 
+31: (pid: 8) -> running 
+32: (pid: 8) -> running 
+33: (pid: 8) -> running 
+34: (pid: 8) -> running 
+35: (pid: 8) -> running 
+36: (pid: 8) -> running 
+37: (pid: 8) -> running 
+38: (pid: 8) -> running 
+39: (pid: 8) -> running 
+40: (pid: 8) -> running 
+41: (pid: 8) -> running 
+42: (pid: 8) -> running 
+43: (pid: 8) -> running 
+44: (pid: 8) -> running -> terminated
+45: (pid: 1) -> running 
+46: (pid: 1) -> running 
+47: (pid: 1) -> running 
+48: (pid: 1) -> running 
+49: (pid: 1) -> running -> terminated
+50: (pid: 2) -> running 
+51: (pid: 2) -> running 
+52: (pid: 2) -> running 
+53: (pid: 2) -> running 
+54: (pid: 2) -> running 
+55: (pid: 2) -> running 
+56: (pid: 2) -> running 
+57: (pid: 2) -> running 
+58: (pid: 2) -> running 
+59: (pid: 2) -> running 
+60: (pid: 2) -> running 
+61: (pid: 2) -> running 
+62: (pid: 2) -> running 
+63: (pid: 2) -> running 
+64: (pid: 2) -> running 
+65: (pid: 2) -> running -> terminated
+66: (pid: 4) -> running 
+67: (pid: 4) -> running 
+68: (pid: 4) -> running 
+69: (pid: 4) -> running 
+70: (pid: 4) -> running 
+71: (pid: 4) -> running 
+72: (pid: 4) -> running 
+73: (pid: 4) -> running 
+74: (pid: 4) -> running 
+75: (pid: 4) -> running 
+76: (pid: 4) -> running 
+77: (pid: 4) -> running 
+78: (pid: 4) -> running -> terminated
+79: (pid: 5) -> running 
+80: (pid: 5) -> running 
+81: (pid: 5) -> running 
+82: (pid: 5) -> running 
+83: (pid: 5) -> running 
+84: (pid: 5) -> running 
+85: (pid: 5) -> running 
+86: (pid: 5) -> running 
+87: (pid: 5) -> running 
+88: (pid: 5) -> running 
+89: (pid: 5) -> running 
+90: (pid: 5) -> running 
+91: (pid: 5) -> running 
+92: (pid: 5) -> running 
+93: (pid: 5) -> running 
+94: (pid: 5) -> running 
+95: (pid: 5) -> running 
+96: (pid: 5) -> running -> terminated
+97: (pid: 9) -> running 
+98: (pid: 9) -> running 
+99: (pid: 9) -> running 
+100: (pid: 9) -> running 
+101: (pid: 9) -> running 
+102: (pid: 9) -> running 
+103: (pid: 9) -> running 
+104: (pid: 9) -> running 
+105: (pid: 9) -> running 
+106: (pid: 9) -> running 
+107: (pid: 9) -> running 
+108: (pid: 9) -> running -> terminated
+109: (pid: 3) -> running 
+110: (pid: 3) -> running 
+111: (pid: 3) -> running 
+112: (pid: 3) -> running 
+113: (pid: 3) -> running 
+114: (pid: 3) -> running 
+115: (pid: 3) -> running 
+116: (pid: 3) -> running -> terminated
+117: (pid: 10) -> running 
+118: (pid: 10) -> running 
+119: (pid: 10) -> running 
+===========================================================
+(pid: 7)
+waiting time = 0, turnaround time = 16, response time = 0
+===========================================================
+(pid: 6)
+waiting time = 18, turnaround time = 25, response time = 18
+===========================================================
+(pid: 8)
+waiting time = 23, turnaround time = 39, response time = 23
+===========================================================
+(pid: 1)
+waiting time = 38, turnaround time = 43, response time = 38
+===========================================================
+(pid: 2)
+waiting time = 40, turnaround time = 59, response time = 13
+===========================================================
+(pid: 4)
+waiting time = 51, turnaround time = 67, response time = 9
+===========================================================
+(pid: 5)
+waiting time = 62, turnaround time = 80, response time = 62
+===========================================================
+(pid: 9)
+waiting time = 74, turnaround time = 92, response time = 2
+===========================================================
+(pid: 3)
+waiting time = 91, turnaround time = 99, response time = 91
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 44
+Average turnaround time: 57
+Average response time: 28
+Completed: 9
+===========================================================
+<Preemptive LIF Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+4: (pid: 7) -> running 
+5: (pid: 7) -> running 
+6: (pid: 7) -> running 
+preemption is detected.
+7: (pid: 2) -> running -> IO request
+8: (pid: 7) -> running 
+9: (pid: 2) -> IO complete, (pid: 7) -> running 
+10: (pid: 7) -> running 
+11: (pid: 7) -> running 
+preemption is detected.
+12: (pid: 4) -> running -> IO request
+13: (pid: 7) -> running 
+14: (pid: 4) -> IO complete, (pid: 7) -> running 
+15: (pid: 7) -> running 
+16: (pid: 7) -> running 
+preemption is detected.
+17: (pid: 9) -> running -> IO request
+18: (pid: 7) -> running 
+19: (pid: 7) -> running 
+20: (pid: 7) -> running 
+21: (pid: 7) -> running -> terminated
+22: (pid: 9) -> IO complete, (pid: 6) -> running 
+23: (pid: 6) -> running 
+24: (pid: 6) -> running 
+25: (pid: 6) -> running 
+26: (pid: 6) -> running 
+27: (pid: 6) -> running 
+28: (pid: 6) -> running -> terminated
+29: (pid: 8) -> running 
+30: (pid: 8) -> running 
+31: (pid: 8) -> running 
+32: (pid: 8) -> running 
+33: (pid: 8) -> running 
+34: (pid: 8) -> running 
+35: (pid: 8) -> running 
+36: (pid: 8) -> running 
+37: (pid: 8) -> running 
+38: (pid: 8) -> running 
+39: (pid: 8) -> running 
+40: (pid: 8) -> running 
+41: (pid: 8) -> running 
+42: (pid: 8) -> running 
+43: (pid: 8) -> running 
+44: (pid: 8) -> running -> terminated
+45: (pid: 1) -> running 
+46: (pid: 1) -> running 
+47: (pid: 1) -> running 
+48: (pid: 1) -> running 
+49: (pid: 1) -> running -> terminated
+50: (pid: 2) -> running 
+51: (pid: 2) -> running 
+52: (pid: 2) -> running 
+53: (pid: 2) -> running 
+54: (pid: 2) -> running 
+55: (pid: 2) -> running 
+56: (pid: 2) -> running 
+57: (pid: 2) -> running 
+58: (pid: 2) -> running 
+59: (pid: 2) -> running 
+60: (pid: 2) -> running 
+61: (pid: 2) -> running 
+62: (pid: 2) -> running 
+63: (pid: 2) -> running 
+64: (pid: 2) -> running 
+65: (pid: 2) -> running -> terminated
+66: (pid: 4) -> running 
+67: (pid: 4) -> running 
+68: (pid: 4) -> running 
+69: (pid: 4) -> running 
+70: (pid: 4) -> running 
+71: (pid: 4) -> running 
+72: (pid: 4) -> running 
+73: (pid: 4) -> running 
+74: (pid: 4) -> running 
+75: (pid: 4) -> running 
+76: (pid: 4) -> running 
+77: (pid: 4) -> running 
+78: (pid: 4) -> running -> terminated
+79: (pid: 5) -> running 
+80: (pid: 5) -> running 
+81: (pid: 5) -> running 
+82: (pid: 5) -> running 
+83: (pid: 5) -> running 
+84: (pid: 5) -> running 
+85: (pid: 5) -> running 
+86: (pid: 5) -> running 
+87: (pid: 5) -> running 
+88: (pid: 5) -> running 
+89: (pid: 5) -> running 
+90: (pid: 5) -> running 
+91: (pid: 5) -> running 
+92: (pid: 5) -> running 
+93: (pid: 5) -> running 
+94: (pid: 5) -> running 
+95: (pid: 5) -> running 
+96: (pid: 5) -> running -> terminated
+97: (pid: 9) -> running 
+98: (pid: 9) -> running 
+99: (pid: 9) -> running 
+100: (pid: 9) -> running 
+101: (pid: 9) -> running 
+102: (pid: 9) -> running 
+103: (pid: 9) -> running 
+104: (pid: 9) -> running 
+105: (pid: 9) -> running 
+106: (pid: 9) -> running 
+107: (pid: 9) -> running 
+108: (pid: 9) -> running -> terminated
+109: (pid: 3) -> running 
+110: (pid: 3) -> running 
+111: (pid: 3) -> running 
+112: (pid: 3) -> running 
+113: (pid: 3) -> running 
+114: (pid: 3) -> running 
+115: (pid: 3) -> running 
+116: (pid: 3) -> running -> terminated
+117: (pid: 10) -> running 
+118: (pid: 10) -> running 
+119: (pid: 10) -> running 
+===========================================================
+(pid: 7)
+waiting time = 3, turnaround time = 19, response time = 0
+===========================================================
+(pid: 6)
+waiting time = 18, turnaround time = 25, response time = 18
+===========================================================
+(pid: 8)
+waiting time = 23, turnaround time = 39, response time = 23
+===========================================================
+(pid: 1)
+waiting time = 38, turnaround time = 43, response time = 38
+===========================================================
+(pid: 2)
+waiting time = 40, turnaround time = 59, response time = 0
+===========================================================
+(pid: 4)
+waiting time = 51, turnaround time = 67, response time = 0
+===========================================================
+(pid: 5)
+waiting time = 62, turnaround time = 80, response time = 62
+===========================================================
+(pid: 9)
+waiting time = 74, turnaround time = 92, response time = 0
+===========================================================
+(pid: 3)
+waiting time = 91, turnaround time = 99, response time = 91
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 44
+Average turnaround time: 58
+Average response time: 25
+Completed: 9
+===========================================================
+<Non-preemptive LISC Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+4: (pid: 7) -> running 
+5: (pid: 7) -> running 
+6: (pid: 7) -> running 
+7: (pid: 7) -> running 
+8: (pid: 7) -> running 
+9: (pid: 7) -> running 
+10: (pid: 7) -> running 
+11: (pid: 7) -> running 
+12: (pid: 7) -> running 
+13: (pid: 7) -> running 
+14: (pid: 7) -> running 
+15: (pid: 7) -> running 
+16: (pid: 7) -> running 
+17: (pid: 7) -> running 
+18: (pid: 7) -> running -> terminated
+19: (pid: 9) -> running -> IO request
+20: (pid: 4) -> running -> IO request
+21: (pid: 2) -> running -> IO request
+22: (pid: 4) -> IO complete, (pid: 1) -> running 
+23: (pid: 2) -> IO complete, (pid: 1) -> running 
+24: (pid: 9) -> IO complete, (pid: 1) -> running 
+25: (pid: 1) -> running 
+26: (pid: 1) -> running -> terminated
+27: (pid: 6) -> running 
+28: (pid: 6) -> running 
+29: (pid: 6) -> running 
+30: (pid: 6) -> running 
+31: (pid: 6) -> running 
+32: (pid: 6) -> running 
+33: (pid: 6) -> running -> terminated
+34: (pid: 3) -> running 
+35: (pid: 3) -> running 
+36: (pid: 3) -> running 
+37: (pid: 3) -> running 
+38: (pid: 3) -> running 
+39: (pid: 3) -> running 
+40: (pid: 3) -> running 
+41: (pid: 3) -> running -> terminated
+42: (pid: 9) -> running 
+43: (pid: 9) -> running 
+44: (pid: 9) -> running 
+45: (pid: 9) -> running 
+46: (pid: 9) -> running 
+47: (pid: 9) -> running 
+48: (pid: 9) -> running 
+49: (pid: 9) -> running 
+50: (pid: 9) -> running 
+51: (pid: 9) -> running 
+52: (pid: 9) -> running 
+53: (pid: 9) -> running -> terminated
+54: (pid: 10) -> running 
+55: (pid: 10) -> running 
+56: (pid: 10) -> running 
+57: (pid: 10) -> running 
+58: (pid: 10) -> running 
+59: (pid: 10) -> running 
+60: (pid: 10) -> running 
+61: (pid: 10) -> running 
+62: (pid: 10) -> running 
+63: (pid: 10) -> running 
+64: (pid: 10) -> running 
+65: (pid: 10) -> running -> terminated
+66: (pid: 4) -> running 
+67: (pid: 4) -> running 
+68: (pid: 4) -> running 
+69: (pid: 4) -> running 
+70: (pid: 4) -> running 
+71: (pid: 4) -> running 
+72: (pid: 4) -> running 
+73: (pid: 4) -> running 
+74: (pid: 4) -> running 
+75: (pid: 4) -> running 
+76: (pid: 4) -> running 
+77: (pid: 4) -> running 
+78: (pid: 4) -> running -> terminated
+79: (pid: 8) -> running 
+80: (pid: 8) -> running 
+81: (pid: 8) -> running 
+82: (pid: 8) -> running 
+83: (pid: 8) -> running 
+84: (pid: 8) -> running 
+85: (pid: 8) -> running 
+86: (pid: 8) -> running 
+87: (pid: 8) -> running 
+88: (pid: 8) -> running 
+89: (pid: 8) -> running 
+90: (pid: 8) -> running 
+91: (pid: 8) -> running 
+92: (pid: 8) -> running 
+93: (pid: 8) -> running 
+94: (pid: 8) -> running -> terminated
+95: (pid: 2) -> running 
+96: (pid: 2) -> running 
+97: (pid: 2) -> running 
+98: (pid: 2) -> running 
+99: (pid: 2) -> running 
+100: (pid: 2) -> running 
+101: (pid: 2) -> running 
+102: (pid: 2) -> running 
+103: (pid: 2) -> running 
+104: (pid: 2) -> running 
+105: (pid: 2) -> running 
+106: (pid: 2) -> running 
+107: (pid: 2) -> running 
+108: (pid: 2) -> running 
+109: (pid: 2) -> running 
+110: (pid: 2) -> running -> terminated
+111: (pid: 5) -> running 
+112: (pid: 5) -> running 
+113: (pid: 5) -> running 
+114: (pid: 5) -> running 
+115: (pid: 5) -> running 
+116: (pid: 5) -> running 
+117: (pid: 5) -> running 
+118: (pid: 5) -> running 
+119: (pid: 5) -> running 
+===========================================================
+(pid: 7)
+waiting time = 0, turnaround time = 16, response time = 0
+===========================================================
+(pid: 1)
+waiting time = 15, turnaround time = 20, response time = 15
+===========================================================
+(pid: 6)
+waiting time = 23, turnaround time = 30, response time = 23
+===========================================================
+(pid: 3)
+waiting time = 16, turnaround time = 24, response time = 16
+===========================================================
+(pid: 9)
+waiting time = 19, turnaround time = 37, response time = 2
+===========================================================
+(pid: 10)
+waiting time = 35, turnaround time = 47, response time = 35
+===========================================================
+(pid: 4)
+waiting time = 51, turnaround time = 67, response time = 8
+===========================================================
+(pid: 8)
+waiting time = 73, turnaround time = 89, response time = 73
+===========================================================
+(pid: 2)
+waiting time = 85, turnaround time = 104, response time = 14
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 35
+Average turnaround time: 48
+Average response time: 20
+Completed: 9
+===========================================================
+<Preemptive LISC Algorithm>
+0: idle
+1: idle
+2: idle
+3: (pid: 7) -> running 
+preemption is detected.
+4: (pid: 6) -> running 
+5: (pid: 6) -> running 
+6: (pid: 6) -> running 
+preemption is detected.
+7: (pid: 2) -> running -> IO request
+8: (pid: 6) -> running 
+9: (pid: 2) -> IO complete, (pid: 6) -> running 
+10: (pid: 6) -> running 
+11: (pid: 6) -> running -> terminated
+12: (pid: 4) -> running -> IO request
+13: (pid: 1) -> running 
+14: (pid: 4) -> IO complete, (pid: 1) -> running 
+15: (pid: 1) -> running 
+16: (pid: 1) -> running 
+preemption is detected.
+17: (pid: 9) -> running -> IO request
+18: (pid: 1) -> running -> terminated
+19: (pid: 3) -> running 
+20: (pid: 3) -> running 
+21: (pid: 3) -> running 
+22: (pid: 9) -> IO complete, (pid: 3) -> running 
+23: (pid: 3) -> running 
+24: (pid: 3) -> running 
+25: (pid: 3) -> running 
+26: (pid: 3) -> running -> terminated
+27: (pid: 9) -> running 
+28: (pid: 9) -> running 
+29: (pid: 9) -> running 
+30: (pid: 9) -> running 
+31: (pid: 9) -> running 
+32: (pid: 9) -> running 
+33: (pid: 9) -> running 
+34: (pid: 9) -> running 
+35: (pid: 9) -> running 
+36: (pid: 9) -> running 
+37: (pid: 9) -> running 
+38: (pid: 9) -> running -> terminated
+39: (pid: 10) -> running 
+40: (pid: 10) -> running 
+41: (pid: 10) -> running 
+42: (pid: 10) -> running 
+43: (pid: 10) -> running 
+44: (pid: 10) -> running 
+45: (pid: 10) -> running 
+46: (pid: 10) -> running 
+47: (pid: 10) -> running 
+48: (pid: 10) -> running 
+49: (pid: 10) -> running 
+50: (pid: 10) -> running -> terminated
+51: (pid: 4) -> running 
+52: (pid: 4) -> running 
+53: (pid: 4) -> running 
+54: (pid: 4) -> running 
+55: (pid: 4) -> running 
+56: (pid: 4) -> running 
+57: (pid: 4) -> running 
+58: (pid: 4) -> running 
+59: (pid: 4) -> running 
+60: (pid: 4) -> running 
+61: (pid: 4) -> running 
+62: (pid: 4) -> running 
+63: (pid: 4) -> running -> terminated
+64: (pid: 7) -> running 
+65: (pid: 7) -> running 
+66: (pid: 7) -> running 
+67: (pid: 7) -> running 
+68: (pid: 7) -> running 
+69: (pid: 7) -> running 
+70: (pid: 7) -> running 
+71: (pid: 7) -> running 
+72: (pid: 7) -> running 
+73: (pid: 7) -> running 
+74: (pid: 7) -> running 
+75: (pid: 7) -> running 
+76: (pid: 7) -> running 
+77: (pid: 7) -> running 
+78: (pid: 7) -> running -> terminated
+79: (pid: 8) -> running 
+80: (pid: 8) -> running 
+81: (pid: 8) -> running 
+82: (pid: 8) -> running 
+83: (pid: 8) -> running 
+84: (pid: 8) -> running 
+85: (pid: 8) -> running 
+86: (pid: 8) -> running 
+87: (pid: 8) -> running 
+88: (pid: 8) -> running 
+89: (pid: 8) -> running 
+90: (pid: 8) -> running 
+91: (pid: 8) -> running 
+92: (pid: 8) -> running 
+93: (pid: 8) -> running 
+94: (pid: 8) -> running -> terminated
+95: (pid: 2) -> running 
+96: (pid: 2) -> running 
+97: (pid: 2) -> running 
+98: (pid: 2) -> running 
+99: (pid: 2) -> running 
+100: (pid: 2) -> running 
+101: (pid: 2) -> running 
+102: (pid: 2) -> running 
+103: (pid: 2) -> running 
+104: (pid: 2) -> running 
+105: (pid: 2) -> running 
+106: (pid: 2) -> running 
+107: (pid: 2) -> running 
+108: (pid: 2) -> running 
+109: (pid: 2) -> running 
+110: (pid: 2) -> running -> terminated
+111: (pid: 5) -> running 
+112: (pid: 5) -> running 
+113: (pid: 5) -> running 
+114: (pid: 5) -> running 
+115: (pid: 5) -> running 
+116: (pid: 5) -> running 
+117: (pid: 5) -> running 
+118: (pid: 5) -> running 
+119: (pid: 5) -> running 
+===========================================================
+(pid: 6)
+waiting time = 1, turnaround time = 8, response time = 0
+===========================================================
+(pid: 1)
+waiting time = 7, turnaround time = 12, response time = 6
+===========================================================
+(pid: 3)
+waiting time = 1, turnaround time = 9, response time = 1
+===========================================================
+(pid: 9)
+waiting time = 4, turnaround time = 22, response time = 0
+===========================================================
+(pid: 10)
+waiting time = 20, turnaround time = 32, response time = 20
+===========================================================
+(pid: 4)
+waiting time = 36, turnaround time = 52, response time = 0
+===========================================================
+(pid: 7)
+waiting time = 60, turnaround time = 76, response time = 0
+===========================================================
+(pid: 8)
+waiting time = 73, turnaround time = 89, response time = 73
+===========================================================
+(pid: 2)
+waiting time = 85, turnaround time = 104, response time = 0
+===========================================================
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 31
+Average turnaround time: 44
+Average response time: 11
+Completed: 9
+===========================================================
+
+                       <Evaluation>                    
+
+===========================================================
+<FCFS Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 41
+Average turnaround time: 54
+Average response time: 31
+Completed: 9
+===========================================================
+<Non-preemptive SJF Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 33
+Average turnaround time: 46
+Average response time: 29
+Completed: 9
+===========================================================
+<Preemptive SJF Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 31
+Average turnaround time: 44
+Average response time: 20
+Completed: 9
+===========================================================
+<Non-preemptive Priority Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 41
+Average turnaround time: 56
+Average response time: 36
+Completed: 8
+===========================================================
+<Preemptive Priority Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 42
+Average turnaround time: 57
+Average response time: 28
+Completed: 8
+===========================================================
+<Round Robin Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 61
+Average turnaround time: 71
+Average response time: 7
+Completed: 6
+===========================================================
+<Non-preemptive LIF Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 44
+Average turnaround time: 57
+Average response time: 28
+Completed: 9
+===========================================================
+<Preemptive LIF Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 44
+Average turnaround time: 58
+Average response time: 25
+Completed: 9
+===========================================================
+<Non-preemptive LISC Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 35
+Average turnaround time: 48
+Average response time: 20
+Completed: 9
+===========================================================
+<Preemptive LISC Algorithm>
+-----------------------------------------------------------
+start time: 3 / end time: 119 / CPU utilization : 100.00% 
+Average waiting time: 31
+Average turnaround time: 44
+Average response time: 11
+Completed: 9
+===========================================================
