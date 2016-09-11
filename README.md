@@ -16,20 +16,20 @@ Details are covered in Report.pdf
 - Priority
 - Round Robin
 - LIF (Longest I/O First)
-- LISC (Logest I/O & Shortest CPU First)
+- LISC (Longest I/O & Shortest CPU First)
 
 ---
 #### Getting Started:
-- Download 'CPUScheduler.out'.
+- Download 'CPUScheduler'
 - Execute the file on linux terminal with two arguments<br>
 (1) The total number of processes<br>
 (2) The number of processes that will call I/O request<br>
 - Example<br>
-`./CPUScheduler.out 10 3`
+`./CPUScheduler 10 3`
 <br>
 If you want to save the result in a file, type this:
 <br>
-`./CPUScheduler.out 10 3 >> result.txt`
+`./CPUScheduler 10 3 >> result.txt`
 
 ----
 #### Contacts:
