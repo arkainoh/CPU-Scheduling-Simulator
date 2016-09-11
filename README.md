@@ -1,7 +1,12 @@
 # CPU Scheduling Simulator
 
 ----
-#### Language: C
+### Demo:
+- [https://youtu.be/sQvcUbmPpxA](https://youtu.be/sQvcUbmPpxA)
+
+----
+#### Language: 
+- C
 
 ----
 #### Compiler:
