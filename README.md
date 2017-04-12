@@ -30,8 +30,5 @@ Details are covered in Report.pdf
 (1) The total number of processes<br>
 (2) The number of processes that will call I/O request<br>
 - Example<br>
-`./CPUScheduler 10 3`
-<br>
-If you want to save the result in a file, type this:
-<br>
 `./CPUScheduler 10 3 >> result.txt`
+<br>
