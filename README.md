@@ -35,8 +35,3 @@ Details are covered in Report.pdf
 If you want to save the result in a file, type this:
 <br>
 `./CPUScheduler 10 3 >> result.txt`
-
-----
-#### Contacts:
-- arkainoh@gmail.com
-
